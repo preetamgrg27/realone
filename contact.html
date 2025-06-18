@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial scale="1.0">
+        <title>LEVELS CLUB POKHARA</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/akira-expanded" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    </head>
+<body>
+      
+ <header id="mainHeader" style="backdrop-filter: blur(12px); background: rgba(24,24,27,0.7); transition: top 0.4s;">
+  <div class="container mx-auto px-4 flex flex-col items-center py-4">
+    <div class="flex items-center justify-center mb-4 space-x-4">
+      <img src="gallery/logo.png" alt="Levels Club Pokhara Logo" class="h-16">
+      <h1 class="text-3xl font-bold drop-shadow text-center" style="font-family: 'Akira Expanded', sans-serif;">
+        <a href="index.html">LEVELS CLUB POKHARA</a>
+      </h1>
+    </div>
+    <nav class="flex justify-center space-x-8 text-lg font-bold mb-0">
+      <a href="index.html" class="hover:text-orange-500 font-bold uppercase text-2xl drop-shadow">Home</a>
+      <a href="faq.html" class="hover:text-orange-500 font-bold uppercase text-2xl drop-shadow">FAQs</a>
+      <a href="contact.html" class="hover:text-orange-500 font-bold uppercase text-2xl drop-shadow">Contact</a>
+    </nav>
+  </div>
+</header>
+<script>
+let lastScrollY = window.scrollY;
+const header = document.getElementById('mainHeader');
+header.style.position = "fixed";
+header.style.width = "100%";
+header.style.top = "0";
+header.style.zIndex = "50";
+header.style.transition = "top 0.4s cubic-bezier(0.4,0,0.2,1)";
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY === 0) {
+    header.style.top = "0";
+  } else if (window.scrollY > lastScrollY) {
+   header.style.top = `-${header.offsetHeight}px`;
+  } else {
+   
+    header.style.top = "0";
+  }
+  lastScrollY = window.scrollY;
+});
+</script>
+<br><br><br>
+     
+
+    <main>
+        <section class="about-section">
+            <div class="club-photo">
+                <img src="gallery/events2.jpg" alt="Levels Club Pokhara Interior">
+            </div>
+            <div class="description">
+                <h2 style="font-family: 'Akira Expanded', sans-serif;">Pokhara's Premiere Nightlife Destination</h2>
+                <p>
+                    Levels Club brings you the ultimate party experience in Lakeside, Pokhara. 
+                    Featuring top DJs, premium cocktails, and an electrifying atmosphere, we're the hottest spot for nightlife in Nepal. 
+                    Step inside and immerse yourself in a world of vibrant lights, energetic music, and a welcoming crowd ready to celebrate every night. 
+                    Our state-of-the-art sound and lighting systems create an unforgettable ambiance, while our skilled bartenders serve up creative drinks to keep the party going. 
+                    Whether you're looking to dance the night away, enjoy live performances, or simply relax with friends in a stylish setting, Levels Club is your go-to destination. 
+                    Join us for themed events, exclusive parties, and special guest appearances that make every visit unique. 
+                    Experience the best of Pokhara's nightlife—only at Levels Club.
+                </p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <h2><span>CONTACT</span> US</h2>
+            
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3 class="montserrat-bold">Location</h3>
+                 <a href="https://maps.app.goo.gl/rhhoynFXe3spq2J56" target="_blank" class="hover:text-orange-500 drop-shadow">
+                 Centre Point, Lakeside, Pokhara
+                 </a> </div>
+                
+                <div class="contact-card">
+                    <i class="fas fa-phone-alt"></i>
+                    <h3 class="montserrat-bold">Phone</h3>
+               <a href="tel:9802853733" class="flex items-center justify-center hover:text-orange-500">
+                        9802853733
+                    </a>
+                   </div>
+                
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3 class="montserrat-bold ">Email</h3>
+                <p class=" nexa-bold text-lg flex items-center justify-center">
+                     <a href="mailto:levelsclubpokhara@gmail.com" class="flex items-center hover:text-orange-500">
+                        <i class="fas fa-envelope text-orange-500 mr-2 drop-shadow"></i> levelsclubpokhara@gmail.com
+                    </a>
+                </p> </div>
+            </div>
+
+            <div class="social-media">
+            <a href="https://www.facebook.com/profile.php?id=61567808766807" class="text-white hover:text-orange-500 drop-shadow text-3xl">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/levelsclubpokhara/" class="text-white hover:text-orange-500 drop-shadow text-3xl">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@levelsclub_pokhara" class="text-white hover:text-orange-500 drop-shadow text-3xl">
+                        <i class="fab fa-tiktok"></i>
+                    </a>  </div>
+
+            <div class="opening-hours">
+                <h3 class="montserrat-bold"><i class="far fa-clock"></i> Opening Hours</h3>
+                <p class="nexa-bold drop-shadow">Everyday: 8:00 PM - 6:00 AM</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+     <p class="nexa-bold drop-shadow">&copy; 2025 Levels Club Pokhara. All Rights Reserved. <a href="rules.html" class="hover:text-orange-500">Rules and Regulations </a>|<a href="terms.html" class="hover:text-orange-500">Terms & Conditions</a> | <a href="privacy.html" class="hover:text-orange-500">Privacy Policy</a>
+                    </footer>
+    <style>
+   
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0a0a0a;
+    color: #fff;
+    line-height: 1.6;
+}
+header {
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+
+#mainHeader {
+  transition: top 0.3s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+#mainHeader.header-hidden {
+  top: -120px; 
+}
+.header-content h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    text-shadow: 0 0 10px #ff00ff, 
+                 0 0 20px #00ffff;
+    letter-spacing: 3px;
+}
+
+.tagline {
+    font-size: 1.5rem;
+    color: #fff;
+    text-shadow: 0 0 5px #00ffff;
+}
+
+
+.about-section {
+    display: flex;
+    padding: 3rem 10%;
+    gap: 2rem;
+    align-items: center;
+}
+
+.club-photo img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.5);
+}
+
+.description h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #00ffff;
+}
+
+.description p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+
+.contact-section {
+    padding: 3rem 10%;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.contact-section h2 span {
+    color: #ff00ff;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.contact-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.contact-card i {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #00ffff;
+}
+
+.contact-card h3 {
+    margin-bottom: 0.5rem;
+    color: #ff00ff;
+}
+
+
+.social-media {
+    margin: 2rem 0;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 0 10px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 50px;
+    transition: all 0.3s;
+}
+
+.social-icon:hover {
+    background: #ff00ff;
+    transform: scale(1.1);
+}
+
+
+.opening-hours {
+    background: rgba(0, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.opening-hours h3 {
+    margin-bottom: 1rem;
+    color: #00ffff;
+}
+
+.opening-hours i {
+    margin-right: 10px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.5);
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+    }
+    
+    .header-content h1 {
+        font-size: 2.5rem;
+    }
+}
+  .drop-shadow-text {
+        font-size: 3em;
+        color: #333;
+        filter: drop-shadow(3px 3px 5px rgba(253, 139, 0, 0.3));
+    }
+  @font-face {
+    font-family: 'Nexa Bold';
+    src: url('fonts/nexa-bold.woff2') format('woff2'),
+         url('fonts/nexa-bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+p {
+    font-family: 'Nexa Bold', sans-serif;
+    font-size: 1rem; /* Adjust size as needed */
+    color: #ffffff; /* Optional: Set text color */
+}
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; /* Bold weight */
+    font-size: 1.5rem; /* Adjust size as needed */
+    color: #ffffff; /* Optional: Set text color */
+}
+.montserrat-bold {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+@font-face {
+    font-family: 'PhotographSignature';
+    src: url('./fonts/PhotographSignature.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Use the font */
+.signature-text {
+    font-family: 'PhotographSignature', cursive;
+    font-size: 48px;
+    color: #333;
+}
+    </style>
+</body>
+</html>

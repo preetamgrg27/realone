@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Table - Levels Club Pokhara</title>
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/akira-expanded" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <style>
+    
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            overflow-x: hidden;
+            color: #fff;
+            background-color: #000;
+        }
+        
+        /* Parallax Sections */
+        .parallax {
+            min-height: 100vh;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        
+        .parallax::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            z-index: 1;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #ff6b6b;
+            text-align: center;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: #f8a5c2;
+        }
+        
+        /* Booking Form Styles */
+        .booking-form {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 10px;
+            backdrop-filter: blur(5px);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .form-group {
+            margin-bottom: 25px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        
+        input, select, textarea {
+            width: 100%;
+            padding: 12px 15px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid #444;
+            border-radius: 5px;
+            color: white;
+            font-size: 1rem;
+        }
+        
+        input:focus, select:focus {
+            outline: none;
+            border-color: #ff6b6b;
+        }
+        
+        .guest-fields {
+            margin-top: 20px;
+            border-top: 1px solid #444;
+            padding-top: 20px;
+        }
+        
+        .add-guest {
+            background-color: #ff6b6b;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            display: inline-block;
+        }
+        
+        .submit-btn {
+            background-color: #ff6b6b;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: block;
+            width: 100%;
+            margin-top: 30px;
+            transition: all 0.3s;
+        }
+        
+        .submit-btn:hover {
+            background-color: #ff5252;
+            transform: translateY(-3px);
+        }
+        
+        /* Success Message */
+        .success-message {
+            text-align: center;
+            display: none;
+        }
+        
+        .success-message h2 {
+            color: #4CAF50;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .booking-form {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header id="mainHeader" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-black bg-opacity-70 shadow-lg">
+        <div class="header-content flex items-center justify-between px-8 py-4">
+            <a href="index.html" class="flex items-center gap-2">
+                <img src="gallery/levelslogo.png" alt="Levels Club Logo" style="height:48px;">
+                <span class="font-bold text-2xl text-white tracking-widest" style="font-family: 'Akira Expanded', sans-serif;">LEVELS CLUB</span>
+            </a>
+            <nav class="flex gap-8">
+                <a href="index.html#Events" class="text-white hover:text-orange-500 font-semibold transition">Events</a>
+                <a href="index.html#levels-club" class="text-white hover:text-orange-500 font-semibold transition">About</a>
+                <a href="gallery.html" class="text-white hover:text-orange-500 font-semibold transition">Gallery</a>
+                <a href="book1.html" class="text-white hover:text-orange-500 font-semibold transition">Book</a>
+                <a href="contact.html" class="text-white hover:text-orange-500 font-semibold transition">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <section class="parallax" style="background-image: url('club-booking-hero.jpg');">
+        <div class="container">
+            <h1>RESERVE YOUR NIGHT OUT</h1>
+            <div class="booking-form">
+                <form id="bookingForm">
+                    <div class="form-group">
+                        <label for="booking-date">Date</label>
+                        <input type="date" id="booking-date" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="booking-time">Time</label>
+                        <select id="booking-time" required>
+                            <option value="">Select Time</option>
+                            <option value="18:00">6:00 PM</option>
+                            <option value="19:00">7:00 PM</option>
+                            <option value="20:00">8:00 PM</option>
+                            <option value="21:00">9:00 PM</option>
+                            <option value="22:00">10:00 PM</option>
+                            <option value="23:00">11:00 PM</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="guest-count">Number of Guests</label>
+                        <select id="guest-count" required>
+                            <option value="">Select Number</option>
+                            <option value="1">1 Person</option>
+                            <option value="2">2 People</option>
+                            <option value="3">3 People</option>
+                            <option value="4">4 People</option>
+                            <option value="5">5 People</option>
+                            <option value="6">6 People</option>
+                            <option value="7">7 People</option>
+                            <option value="8">8 People</option>
+                            <option value="9">9+ People (Contact Us)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contact-name">Your Name</label>
+                        <input type="text" id="contact-name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contact-phone">Phone Number</label>
+                        <input type="tel" id="contact-phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contact-email">Email</label>
+                        <input type="email" id="contact-email" required>
+                    </div>
+                    
+                    <h3>Guest Information</h3>
+                    <div class="guest-fields" id="guestFields">
+                 
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="special-requests">Special Requests</label>
+                        <textarea id="special-requests" rows="3"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" required> I confirm all guests meet the minimum age requirement (18+)
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">RESERVE NOW</button>
+                </form>
+                
+                <div class="success-message" id="successMessage">
+                    <h2>RESERVATION CONFIRMED!</h2>
+                    <p>Thank you for booking with Levels Club Pokhara.</p>
+                    <p>A confirmation has been sent to your email.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+   
+        document.getElementById('guest-count').addEventListener('change', function() {
+            const guestCount = parseInt(this.value);
+            const guestFields = document.getElementById('guestFields');
+            guestFields.innerHTML = '';
+            
+            if (guestCount > 0 && guestCount < 9) {
+                for (let i = 1; i <= guestCount; i++) {
+                    guestFields.innerHTML += `
+                        <div class="form-group guest-info">
+                            <h4>Guest ${i}</h4>
+                            <label for="guest-name-${i}">Full Name</label>
+                            <input type="text" id="guest-name-${i}" required>
+                            
+                            <label for="guest-dob-${i}">Date of Birth</label>
+                            <input type="date" id="guest-dob-${i}" required>
+                            
+                            <label for="guest-id-${i}">ID Type</label>
+                            <select id="guest-id-${i}" required>
+                                <option value="">Select ID Type</option>
+                                <option value="citizenship">Citizenship</option>
+                                <option value="passport">Passport</option>
+                                <option value="driving-license">Driving License</option>
+                            </select>
+                            
+                            <label for="guest-id-number-${i}">ID Number</label>
+                            <input type="text" id="guest-id-number-${i}" required>
+                        </div>
+                    `;
+                }
+            } else if (guestCount === 9) {
+                guestFields.innerHTML = `
+                    <p>For groups larger than 8 people, please contact us directly at +977 9802853733 or email levelsclubpokhara@gmail.com</p>
+                `;
+            }
+        });
+        
+      
+        document.getElementById('bookingForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+          
+            const today = new Date();
+            const bookingDate = new Date(document.getElementById('booking-date').value);
+            
+            if (bookingDate < today) {
+                alert('Please select a future date');
+                return;
+            }
+            
+         
+            const guestCount = parseInt(document.getElementById('guest-count').value);
+            let allValid = true;
+            
+            for (let i = 1; i <= guestCount; i++) {
+                const dob = new Date(document.getElementById(`guest-dob-${i}`).value);
+                const age = calculateAge(dob);
+                
+                if (age < 18) {
+                    alert(`Guest ${i} is under 18 years old. All guests must be 18+ to enter.`);
+                    allValid = false;
+                    break;
+                }
+            }
+            
+            if (allValid) {
+                // In a real implementation, you would send this data to your server
+                // For now, we'll just show the success message
+                document.getElementById('bookingForm').style.display = 'none';
+                document.getElementById('successMessage').style.display = 'block';
+                
+                // Scroll to success message
+                document.getElementById('successMessage').scrollIntoView({ behavior: 'smooth' });
+                
+                // Here you would typically send the data to your backend
+                // sendBookingToServer();
+            }
+        });
+        
+        function calculateAge(dob) {
+            const diff = Date.now() - dob.getTime();
+            const ageDate = new Date(diff);
+            return Math.abs(ageDate.getUTCFullYear() - 1970);
+        }
+        
+        // Simple parallax effect
+        window.addEventListener('scroll', function() {
+            const parallax = document.querySelector('.parallax');
+            const scrollPosition = window.pageYOffset;
+            parallax.style.backgroundPositionY = scrollPosition * 0.5 + 'px';
+        });
+    </script>
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</body>
+</html>

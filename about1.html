@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Levels Club Pokhara</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/akira-expanded" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+      
+       * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            color: #fff;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        header {
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+#mainHeader {
+  backdrop-filter: blur(12px);
+  background: rgba(24,24,27,0.7);
+  transition: top 0.4s cubic-bezier(0.4,0,0.2,1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+}
+
+#mainHeader .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#mainHeader .flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+#mainHeader .space-x-4 > :not(:last-child) {
+  margin-right: 1rem;
+}
+
+#mainHeader img[alt="Levels Club Pokhara Logo"] {
+  height: 96px;
+  max-width: 180px;
+  width: auto;
+  display: block;
+}
+
+#mainHeader h1 {
+  font-size: 2rem;
+  font-family: 'Akira Expanded', 'Montserrat', 'Poppins', Arial, sans-serif;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  letter-spacing: 2px;
+  margin: 0;
+  line-height: 1.1;
+}
+
+#mainHeader h1 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#mainHeader nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 1.25rem;
+  font-family: 'Montserrat', 'Poppins', Arial, sans-serif;
+  font-weight: 700;
+  margin-bottom: 0;
+  margin-top: 0.5rem;
+  width: 100%;
+  flex-direction: row !important; /* Always horizontal */
+}
+
+
+  #mainHeader nav a {
+    margin: 0 !important;
+    font-size: 1.1rem;
+  }
+
+#mainHeader nav a:hover {
+  color: #ff8800;
+}
+
+@media (max-width: 768px) {
+  #mainHeader img[alt="Levels Club Pokhara Logo"] {
+    height: 64px;
+    max-width: 120px;
+  }
+  #mainHeader h1 {
+    font-size: 2.2rem;
+  }
+   #mainHeader nav {
+    flex-direction: row !important; 
+    gap: 1rem !important;
+    margin-top: 0.5rem !important;
+  }
+  #mainHeader nav a {
+    margin: 0 !important;
+    font-size: 1.1rem;
+  }
+  #mainHeader .flex {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+
+body {
+  color: #fff;
+  line-height: 1.6;
+  overflow-x: hidden;
+  font-family: 'Poppins', 'Montserrat', 'Akira Expanded', Arial, sans-serif;
+  background: #000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Akira Expanded', 'Montserrat', 'Poppins', Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+
+
+.logo, .header-content h1 {
+  font-family: 'Akira Expanded', 'Montserrat', 'Poppins', Arial, sans-serif !important;
+  font-size: 2rem !important;
+  color: #fff !important;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.3) !important;
+  letter-spacing: 2px !important;
+  margin: 0 !important;
+}
+        
+        
+        .parallax {
+            min-height: 100vh;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        
+        .parallax::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+        
+        .parallax-content {
+            max-width: 1200px;
+            padding: 20px;
+            text-align: center;
+            z-index: 1;
+        }
+        
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: #ff6b6b;
+        }
+        
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: #f8a5c2;
+        }
+        
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+       
+        #hero {
+            background-image: url('club-exterior.jpg'); 
+        }
+        
+        #about {
+            background-image: url('club-interior.jpg'); 
+        }
+        
+        #facilities {
+            background-image: url('club-bar.jpg'); 
+        }
+        
+        #events {
+            background-image: url('club-dance-floor.jpg'); 
+        }
+        
+        #owner {
+            background-image: url('gallery/owner.jpg'); 
+        }
+        
+        .facilities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .facility-card {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 25px;
+            border-radius: 10px;
+            backdrop-filter: blur(5px);
+            transition: transform 0.3s;
+        }
+        
+        .facility-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .facility-card h3 {
+            color: #74b9ff;
+            margin-bottom: 15px;
+        }
+        
+    
+
+nav {
+  
+  position: static !important;
+  top: auto !important;
+  width: auto !important;
+  padding: 0 !important;
+  z-index: auto !important;
+  display: flex !important;
+  justify-content: center !important;
+  background-color: transparent !important;
+  margin-top: 0.5rem !important;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1.5rem;
+  font-weight: 700;
+  font-family: 'Montserrat', 'Poppins', Arial, sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #ff8800;
+}
+
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column !important;
+    gap: 1rem !important;
+    margin-top: 0.5rem !important;
+  }
+  nav a {
+    margin: 0 !important;
+    font-size: 1.1rem;
+  }
+}
+        footer {
+            padding: 30px;
+            text-align: center;
+            background-color: #111;
+        }
+        
+        .social-icons {
+            margin-top: 20px;
+        }
+        
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+<header id="mainHeader" style="backdrop-filter: blur(12px); background: rgba(24,24,27,0.7); transition: top 0.4s;">
+  <div class="container mx-auto px-4 flex flex-col items-center py-4">
+    <div class="flex items-center justify-center mb-4 space-x-4">
+      <img src="gallery/logo.png" alt="Levels Club Pokhara Logo" style="height:96px;max-width:180px;width:auto;">
+      <h1 class="text-3xl font-bold drop-shadow text-center" style="font-family: 'Akira Expanded', sans-serif;">
+        <a href="index.html" style="text-decoration:none;">LEVELS CLUB POKHARA</a>
+      </h1>
+    </div>
+    <nav style="margin-top: 0.5rem;">
+      <a href="index.html" class="hover:text-orange-500 font-bold uppercase text-2xl drop-shadow" style="margin: 0 1.5rem; text-decoration:none;">Home</a>
+      <a href="faq.html" class="hover:text-orange-500 font-bold uppercase text-2xl drop-shadow" style="margin: 0 1.5rem; text-decoration:none;">FAQs</a>
+      <a href="contact.html" class="hover:text-orange-500 font-bold uppercase text-2xl drop-shadow" style="margin: 0 1.5rem; text-decoration:none;">Contact</a>
+    </nav>
+  </div>
+</header><br><br><br><br><br><br>
+<script>
+let lastScrollY = window.scrollY;
+const header = document.getElementById('mainHeader');
+header.style.position = "fixed";
+header.style.width = "100%";
+header.style.top = "0";
+header.style.zIndex = "50";
+header.style.transition = "top 0.4s cubic-bezier(0.4,0,0.2,1)";
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY === 0) {
+    header.style.top = "0";
+  } else if (window.scrollY > lastScrollY) {
+   header.style.top = `-${header.offsetHeight}px`;
+  } else {
+   
+    header.style.top = "0";
+  }
+  lastScrollY = window.scrollY;
+});
+</script>
+ 
+    
+    <section id="hero" class="parallax">
+        <div class="parallax-content">
+            <h1>LEVELS CLUB POKHARA</h1>
+            <p>Premier nightlife destination in the heart of Lakeside</p>
+        </div>
+    </section>
+
+    
+    <section id="about" class="parallax">
+        <div class="parallax-content">
+            <h2>Our Story</h2>
+            <p>Located at Centerpoint, Lakeside, Levels Club Pokhara has been the go-to destination for nightlife enthusiasts since its establishment. Our club offers an unparalleled experience with its vibrant atmosphere, state-of-the-art sound system, and breathtaking views of the surrounding mountains.</p>
+            <p>We pride ourselves on creating memorable nights where music, drinks, and good vibes flow endlessly. Whether you're looking to dance the night away or enjoy cocktails with friends, Levels Club provides the perfect setting.</p>
+        </div>
+    </section>
+
+  
+    <section id="facilities" class="parallax">
+        <div class="parallax-content">
+            <h2>Our Facilities</h2>
+            <p>Levels Club Pokhara offers world-class amenities to ensure an unforgettable experience for all our guests.</p>
+            
+            <div class="facilities-grid">
+                <div class="facility-card">
+                    <h3>Premium Sound System</h3>
+                    <p>Experience crystal-clear audio with our top-of-the-line Funktion-One sound system that delivers unparalleled sound quality.</p>
+                </div>
+                
+                <div class="facility-card">
+                    <h3>Luxury Lounge Areas</h3>
+                    <p>Relax in our VIP sections with comfortable seating, premium bottle service, and dedicated staff.</p>
+                </div>
+                
+                <div class="facility-card">
+                    <h3>Signature Cocktails</h3>
+                    <p>Enjoy our expertly crafted cocktails made by skilled mixologists using premium spirits and fresh ingredients.</p>
+                </div>
+                
+                <div class="facility-card">
+                    <h3>LED Dance Floor</h3>
+                    <p>Our state-of-the-art LED dance floor creates an immersive experience that syncs with the music.</p>
+                </div>
+                
+                <div class="facility-card">
+                    <h3>Rooftop Terrace</h3>
+                    <p>Take a break and enjoy the stunning views of Phewa Lake and the Annapurna range from our rooftop.</p>
+                </div>
+                
+                <div class="facility-card">
+                    <h3>Private Events</h3>
+                    <p>Host your special occasions in our exclusive event spaces with customizable packages.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="events" class="parallax">
+        <div class="parallax-content">
+            <h2>Events & Entertainment</h2>
+            <p>Levels Club Pokhara hosts the most exciting events in town featuring:</p>
+            <ul style="list-style-type: none; margin-bottom: 20px;">
+                <li>• International DJ nights every weekend</li>
+                <li>• Themed party nights (Retro, Bollywood, EDM, etc.)</li>
+                <li>• Live music performances</li>
+                <li>• Special holiday celebrations</li>
+                <li>• Local artist showcases</li>
+            </ul>
+            <p>Follow us on social media to stay updated on our upcoming events!</p>
+        </div>
+    </section>
+
+    
+  <section id="owner" class="parallax">
+    <div class="parallax-content">
+        <h2>Our Visionary</h2>
+       
+        <div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 1.5rem;">
+            <img src="gallery/owner.jpg" alt="Amit Roka - Owner of Levels Club Pokhara"
+                 style="width: 180px; height: 180px; object-fit: cover; border-radius: 100px; border: 4px solid #ff8800; box-shadow: 0 0 20px rgba(255, 0, 255, 0.3); background: #222; margin-bottom: 1rem;">
+            <span style="font-weight: bold; color: #ff8800; font-size: 1.2rem;">Amit Roka</span>
+            <span style="font-size: 1rem; color: #fff; opacity: 0.8;">Owner</span>
+        </div>
+     
+        <p>Amit Roka, the owner of Levels Club Pokhara, brings years of hospitality experience and a passion for creating exceptional nightlife experiences.</p>
+        <p>"My vision was to create a space where people can escape their daily routines and immerse themselves in music, dance, and celebration. Levels Club is more than just a venue - it's a community where memories are made."</p>
+        <p>- Amit Roka</p>
+    </div>
+</section>
+
+    <footer>
+        <h3>LEVELS CLUB POKHARA</h3>
+        <p>Centerpoint, Lakeside, Pokhara, Nepal</p>
+        <p>Open Daily: 9:00 PM - 6:00 AM</p>
+        <p>Contact: +977 9802853733| levelsclubpokhara@gmail.com</p>
+        
+        <div class="social-icons">
+         <a href="https://www.facebook.com/profile.php?id=61567808766807" class="text-white hover:text-orange-500">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/levelsclubpokhara/" class="text-white hover:text-orange-500">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/@levelsclub_pokhara" class="text-white hover:text-orange-500">
+                    <i class="fab fa-tiktok"></i>  </div>
+    </footer>
+
+    <script>
+    
+        window.addEventListener('scroll', function() {
+            const parallaxSections = document.querySelectorAll('.parallax');
+            const scrollPosition = window.pageYOffset;
+            
+            parallaxSections.forEach(section => {
+                section.style.backgroundPositionY = scrollPosition * 0.5 + 'px';
+            });
+        });
+        
+        // Smooth scrolling for navigation
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</body>
+</html>

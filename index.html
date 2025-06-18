@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial scale="1.0">
+        <title>LEVELS CLUB POKHARA</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/akira-expanded" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <video autoplay loop muted playsinline class="background-video">
+            <source src="gallery/1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    
+ <header id="mainHeader" style="backdrop-filter: blur(12px); background: rgba(24,24,27,0.7); transition: top 0.4s;">
+  <div class="container mx-auto px-4 flex flex-col items-center py-4">
+    <div class="flex items-center justify-center mb-4 space-x-4">
+  <img src="gallery/logo.png" alt="Levels Club Pokhara Logo" style="height:96px;max-width:180px;width:auto;">
+      <h1 class="text-3xl font-bold drop-shadow text-center" style="font-family: 'Akira Expanded', sans-serif;">
+        <a href="index.html">LEVELS CLUB POKHARA</a>
+      </h1>
+    </div>
+    <nav class="flex justify-center space-x-8 text-lg font-bold mb-0">
+      <a href="index.html" class="hover:text-orange-500 font-bold uppercase text-2xl drop-shadow">Home</a>
+      <a href="faq.html" class="hover:text-orange-500 font-bold uppercase text-2xl drop-shadow">FAQs</a>
+      <a href="contact.html" class="hover:text-orange-500 font-bold uppercase text-2xl drop-shadow">Contact</a>
+    </nav>
+  </div>
+</header>
+<script>
+let lastScrollY = window.scrollY;
+const header = document.getElementById('mainHeader');
+header.style.position = "fixed";
+header.style.width = "100%";
+header.style.top = "0";
+header.style.zIndex = "50";
+header.style.transition = "top 0.4s cubic-bezier(0.4,0,0.2,1)";
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY === 0) {
+    header.style.top = "0";
+  } else if (window.scrollY > lastScrollY) {
+   header.style.top = `-${header.offsetHeight}px`;
+  } else {
+   
+    header.style.top = "0";
+  }
+  lastScrollY = window.scrollY;
+});
+</script>
+     
+        <main style="margin-top: 4rem;">
+            <section id="upcoming-events-heading" class="relative  text-white py-24 animate-pop ">
+                <div class="container  mx-auto text-center" style="margin: 0;">
+                    <h1 class="water-wave text-6xl font-bold uppercase tracking-wide text-white drop-shadow">
+                        Upcoming Events
+                    </h1>
+                    <p class="text-4xl font-bold uppercase tracking-wide text-white inline-block mt-4" >
+                           <span class="bounce drop-shadow">D</span>
+                           <span class="bounce drop-shadow">i</span>
+                           <span class="bounce drop-shadow">s</span>
+                           <span class="bounce drop-shadow">c</span>
+                           <span class="bounce drop-shadow">o</span>
+                           <span class="bounce drop-shadow">v</span>
+                           <span class="bounce drop-shadow">e</span>
+                           <span class="bounce drop-shadow">r</span>
+                            <span class="bounce drop-shadow">&nbsp;</span>
+                            <span class="bounce drop-shadow">t</span>
+                            <span class="bounce drop-shadow">h</span>
+                            <span class="bounce drop-shadow">e</span>
+                            <span class="bounce drop-shadow">&nbsp;</span>
+                            <span class="bounce drop-shadow">m</span>
+                            <span class="bounce drop-shadow">o</span>
+                            <span class="bounce drop-shadow">s</span>
+                            <span class="bounce drop-shadow">t</span>
+                            <span class="bounce drop-shadow">&nbsp;</span>
+                            <span class="bounce drop-shadow">e</span>
+                            <span class="bounce drop-shadow">x</span>
+                            <span class="bounce drop-shadow">c</span>
+                            <span class="bounce drop-shadow">i</span>
+                            <span class="bounce drop-shadow">t</span>
+                            <span class="bounce drop-shadow">i</span>
+                            <span class="bounce drop-shadow">n</span>
+                            <span class="bounce drop-shadow">g</span>
+                            <span class="bounce drop-shadow">&nbsp;</span>
+                            <span class="bounce drop-shadow">e</span>
+                            <span class="bounce drop-shadow">v</span>
+                            <span class="bounce drop-shadow">e</span>
+                            <span class="bounce drop-shadow">n</span>
+                            <span class="bounce drop-shadow">t</span>
+                            <span class="bounce drop-shadow">s</span>
+                            <span class="bounce drop-shadow">&nbsp;</span>
+                            <span class="bounce drop-shadow">&nbsp;</span>
+                            <br><br>
+                            <span class="bounce drop-shadow">h</span>
+                            <span class="bounce drop-shadow">a</span>
+                            <span class="bounce drop-shadow">p</span>
+                            <span class="bounce drop-shadow">p</span>
+                            <span class="bounce drop-shadow">e</span>
+                            <span class="bounce drop-shadow">n</span>
+                            <span class="bounce drop-shadow">i</span>
+                            <span class="bounce drop-shadow">n</span>
+                            <span class="bounce drop-shadow">g</span>
+                            <span class="bounce drop-shadow">&nbsp;</span>
+                            <span class="bounce drop-shadow">a</span>
+                            <span class="bounce drop-shadow">t</span>
+                            <span class="bounce drop-shadow">&nbsp;</span>
+                            <span class="bounce drop-shadow">L</span>
+                            <span class="bounce drop-shadow">e</span>
+                            <span class="bounce drop-shadow">v</span>
+                            <span class="bounce drop-shadow">e</span>
+                            <span class="bounce drop-shadow">l</span>
+                            <span class="bounce drop-shadow">s</span>
+                            <span class="bounce drop-shadow">&nbsp;</span>
+                            <span class="bounce drop-shadow">C</span>
+                            <span class="bounce drop-shadow">l</span>
+                            <span class="bounce drop-shadow">u</span>
+                            <span class="bounce drop-shadow">b</span>
+                            <span class="bounce drop-shadow">.</span>
+                            <span class="bounce drop-shadow">&nbsp;</span>
+                            <span class="bounce drop-shadow">D</span>
+                            <span class="bounce drop-shadow">o</span>
+                            <span class="bounce drop-shadow">n</span>
+                            <span class="bounce drop-shadow">'</span>
+                            <span class="bounce drop-shadow">t</span>
+                            <span class="bounce drop-shadow">&nbsp;</span>
+                            <br><br>
+                            <span class="bounce drop-shadow">m</span>
+                            <span class="bounce drop-shadow">i</span>
+                            <span class="bounce drop-shadow">s</span>
+                            <span class="bounce drop-shadow">s</span>
+                            <span class="bounce drop-shadow">&nbsp;</span>
+                            <span class="bounce drop-shadow">o</span>
+                            <span class="bounce drop-shadow">u</span>
+                            <span class="bounce drop-shadow">t</span>
+                            <span class="bounce drop-shadow">&nbsp;</span>
+                            <span class="bounce drop-shadow">t</span>
+                            <span class="bounce drop-shadow">h</span>
+                            <span class="bounce drop-shadow">e</span>
+                            <span class="bounce drop-shadow">&nbsp;</span>
+                            <span class="bounce drop-shadow">f</span>
+                            <span class="bounce drop-shadow">u</span>
+                            <span class="bounce drop-shadow">n</span>
+                            <span class="bounce drop-shadow">&nbsp;</span>
+                            
+                    </p>
+
+ <a href="https://wa.me/9802853733" target="_blank" class="book-table-float" title="Book Your Table on WhatsApp">
+  <i class="fas fa-calendar-check"></i>
+  <span>Book Table</span>
+</a>
+            </section>
+<section id="Events" class="relative text-white py-24 animate-pop" style="background-color: transparent;">
+  <div class="container mx-auto max-w-7xl px-12">
+    <div class="swiper upcoming-events-swiper">
+      <div class="swiper-wrapper">
+        
+       <div class="swiper-slide">
+          <div class="flex flex-col md:flex-row items-center gap-16">
+            <div class="w-full md:w-1/2">
+              <img src="gallery/elements.jpg" alt="The Elements" class="rounded-lg shadow-lg w-full h-auto object-cover">
+            </div>
+            <div class="w-full md:w-1/2 flex flex-col justify-center items-center text-center">
+              <h3 class="text-6xl font-bold uppercase tracking-wide text-white mb-8">THE ELEMENTS</h3>
+              <h2 class="montserrat-bold text-4xl font-extrabold mb-6" style="color: white;">
+                <i class="fas fa-calendar text-orange-500 mr-4 drop-shadow signature-text"></i> 4th JULY 
+              </h2>
+              <p class="text-lg leading-relaxed drop-shadow max-w-2xl mb-6">
+            The Elements, one of Nepal's most popular contemporary bands, are set to perform live at Levels Club Pokhara on July 4, 2025! Known for their soulful melodies, energetic performances, and unique blend of folk, pop, and rock, The Elements have captivated audiences across the country. Join us for an unforgettable night as they bring their chart-topping hits and electrifying stage presence to Pokhara. Whether you're a longtime fan or new to their music, this is a show you won't want to miss. Gather your friends and experience The Elements live—only at Levels Club!
+            </p>
+            </div>
+          </div>
+        </div>
+     
+        <div class="swiper-slide">
+          <div class="flex flex-col md:flex-row items-center gap-16">
+            <div class="w-full md:w-1/2 relative">
+              <img src="gallery/IMG_4542.JPG" alt="Event 2" class="rounded-lg shadow-lg w-full h-auto object-cover">
+            </div>
+            <div class="w-full md:w-1/2 flex flex-col justify-center items-center text-center">
+              <h3 class="text-6xl font-bold uppercase tracking-wide text-white drop-shadow" style="font-family: 'Akira Expanded', sans-serif;">DJ Night Vibes</h3>
+              <h2 class="montserrat-bold text-4xl font-extrabold mt-4 drop-shadow signature-text" style="color: white;">
+                <i class="fas fa-calendar text-orange-500 mr-4 drop-shadow"></i> Everyday
+              </h2>
+              <p class="text-lg mt-4 leading-relaxed drop-shadow max-w-2xl mb-6">
+                Join us for an electrifying DJ night at Levels Club! Experience the best beats, an amazing crowd, and unforgettable vibes. Don't miss out!
+                Levels Club has got one of the best DJs along with their own respective beat drops and their tracks make sure to join us at Levels Club for checking out their amazing performance.
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="swiper-slide">
+          <div class="flex flex-col md:flex-row items-center gap-16 bg-gray-900">
+            <div class="w-full md:w-1/2 flex justify-center">
+              <video 
+                src="gallery/ladiesnght.mp4" 
+                controls 
+                autoplay 
+                loop 
+                muted 
+                class="rounded-lg shadow-lg"
+                style="width:300px; height:500px; object-fit:cover;">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="w-full md:w-1/2 flex flex-col justify-center items-center text-center">
+              <h3 class="text-6xl font-bold uppercase tracking-wide text-gray-400">Ladies Night at Levels Club</h3>
+              <h2 class="text-4xl font-extrabold mt-4 signature-text" style="color: white;">
+                <i class="fas fa-calendar text-orange-500 mr-4"></i> Every Wednesday
+              </h2>
+              <p class="text-lg mt-4 leading-relaxed max-w-2xl mb-6">
+                Every Wednesday, the spotlight's on you, ladies! Get ready for a night of glam, groove, and good vibes only at Club Mirage. From 8 PM till late, we’re serving up complimentary drinks for the ladies, killer DJ sets, and a dancefloor that doesn’t quit. Whether you're celebrating, letting loose, or just vibing with your crew — this is your night. Dress to impress, bring the energy, and let’s turn up the heat. No cover for ladies before 10 PM — because queens deserve the VIP treatment. See you on the dancefloor.
+              </p>
+            </div>
+          </div>
+        </div>
+         <div class="swiper-slide">
+          <div class="flex flex-col md:flex-row items-center gap-16 bg-gray-900">
+            <div class="w-full md:w-1/2 flex justify-center">
+              <video 
+                src="gallery/bollywood.mp4" 
+                controls 
+                autoplay 
+                loop 
+                muted 
+                class="rounded-lg shadow-lg"
+                style="width:300px; height:500px; object-fit:cover;">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="w-full md:w-1/2 flex flex-col justify-center items-center text-center">
+              <h3 class="text-6xl font-bold uppercase tracking-wide text-gray-400">Bollywood Night Fever At <strong>LEVELS CLUB</strong></h3>
+              <h2 class="text-4xl font-extrabold mt-4 signature-text" style="color: white;">
+                <i class="fas fa-calendar text-orange-500 mr-4"></i> Every Saturday
+              </h2>
+              <p class="text-lg mt-4 leading-relaxed max-w-2xl mb-6">
+                Get ready to light up your Saturday nights with the ultimate Bollywood Night Fever at Levels Club! Every Saturday, we transform the club into a vibrant celebration of Bollywood music, dance, and culture. Groove to the hottest Bollywood tracks spun by our resident DJs, enjoy dazzling lights, and experience an atmosphere filled with energy and excitement. Whether you're a die-hard Bollywood fan or just looking for a fun night out, our Bollywood Night promises non-stop dancing, signature cocktails, and unforgettable memories with friends. Dress to impress, bring your best moves, and join us every Saturday for a night where the beats never stop and the party never ends!
+            </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+               
+            <div class="chatbox" onclick="toggleIcons()">
+                <i class="fas fa-comment-dots"></i>
+              </div>
+              
+              
+              <div class="social-icons" id="socialIcons">
+                <a href="https://wa.me/9802853733" class="whatsapp" target="_blank" title="Chat on WhatsApp">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://m.me/yourpageusername" class="messenger" target="_blank" title="Chat on Messenger">
+                  <i class="fab fa-facebook-messenger"></i>
+                </a>
+              </div>
+              
+              <script>
+                function toggleIcons() {
+                  const icons = document.getElementById("socialIcons");
+                  icons.style.display = icons.style.display === "flex" ? "none" : "flex";
+                }
+              </script>
+      <section class="about-preview">
+    <div class="about-preview-container">
+        <div class="about-preview-text justify-center text-center">
+            <h2>LEVELS CLUB POKHARA</h2>
+            <p>Located at Centerpoint, Lakeside, Levels Club Pokhara is the premier nightlife destination in the heart of Pokhara. We offer an unparalleled experience with vibrant atmosphere, state-of-the-art sound system, and breathtaking views.</p>
+            
+            <div class="about-highlights">
+                <div class="highlight-item">
+                    <i class="fas fa-music"></i>
+                    <span>Premium Sound System</span>
+                </div>
+                <div class="highlight-item">
+                    <i class="fas fa-cocktail"></i>
+                    <span>Signature Cocktails</span>
+                </div>
+                <div class="highlight-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>Weekly Events</span>
+                </div>
+            </div>
+            
+            <a href="about1.html" class="more-button">Discover More About Us</a>
+        </div>
+        
+        <div class="about-preview-image">
+            <img src="gallery/events2.jpg" alt="Levels Club Pokhara">
+        </div>
+    </div>
+</section>
+
+<style>
+   
+    .about-preview {
+        background-color: transparent;
+        padding: 60px 0;
+        color: white;
+    }
+    
+    .about-preview-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        padding: 0 20px;
+    }
+    
+    .about-preview-text {
+        flex: 1;
+    }
+    
+    .about-preview-image {
+        flex: 1;
+    }
+    
+    .about-preview-image img {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+    
+    .about-preview h2 {
+        font-size: 2.5rem;
+        color: #ff6b6b;
+        margin-bottom: 20px;
+    }
+    
+    .about-preview p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        margin-bottom: 30px;
+        color: #ddd;
+    }
+    
+    .about-highlights {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-bottom: 30px;
+    }
+    
+    .highlight-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background-color: rgba(255,255,255,0.1);
+        padding: 12px 20px;
+        border-radius: 50px;
+    }
+    
+    .highlight-item i {
+        color: #f8a5c2;
+    }
+    
+    .more-button {
+        display: inline-block;
+        padding: 12px 30px;
+        background-color: #ff6b6b;
+        color: white;
+        text-decoration: none;
+        border-radius: 50px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        border: 2px solid #ff6b6b;
+    }
+    
+    .more-button:hover {
+        background-color: transparent;
+        color: #ff6b6b;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .about-preview-container {
+            flex-direction: column;
+        }
+        
+        .about-preview-text, 
+        .about-preview-image {
+            flex: none;
+            width: 100%;
+        }
+        
+        .about-preview-image {
+            order: -1;
+            margin-bottom: 30px;
+        }
+    }
+</style>
+                </div>
+            </section>
+         <section id="resident-djs" class="relative text-white py-16 animate-pop" style="background-color: transparent;">
+    <h2 class="text-6xl font-bold uppercase tracking-wide text-center text-orange-500 drop-shadow" style="font-family: 'Akira Expanded', sans-serif;">VIBE WITH OUR DJs</h2>
+    <br><br> 
+    <div class="carousel-container">
+        <div class="carousel">
+         
+            <div class="dj-card">
+                <div class="dj-logo">
+                    <img src="gallery/LUBANG BOLD.png" alt="Lubang Logo">
+                </div>
+                <img src="gallery/lubang2.jpg" alt="DJ Lubang">
+                <div class="dj-info">
+                    <h2 class="dj-name">Lubang</h2>
+                    <p class="dj-description">Known for energetic sets, Lubang fuses deep house and techno, igniting the dancefloor with infectious rhythms.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/dj_lubang/" target="_blank"><i class="fab fa-instagram"></i></a>
+                      
+                    </div>
+                </div>
+            </div>
+
+     
+            <div class="dj-card">
+                <div class="dj-logo">
+                    <img src="gallery/valley.png" alt="Valley Logo">
+                </div>
+                <img src="gallery/valley.jpg" alt="DJ Valley">
+                <div class="dj-info">
+                    <h2 class="dj-name">Valley</h2>
+                    <p class="dj-description">Valley energizes the crowd with dynamic sets, blending house and EDM for an unforgettable dancefloor experience.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/00valley00/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="dj-card">
+                <div class="dj-logo">
+                    <img src="gallery/yongki.png" alt="Yongki Logo">
+                </div>
+                <img src="gallery/yongki.jpg" alt="DJ Yongki">
+                <div class="dj-info">
+                    <h2 class="dj-name">Yongki</h2>
+                    <p class="dj-description">Yongki brings infectious energy to the booth, mixing house and club anthems that keep the crowd moving all night long.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/djyongki009/" target="_blank"><i class="fab fa-instagram"></i></a>
+                     
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="dj-card">
+                <div class="dj-logo">
+                    <img src="gallery/UKESH.png" alt="Ukesh Logo">
+                </div>
+                <img src="gallery/ukesh.jpg" alt="DJ Ukesh">
+                <div class="dj-info">
+                    <h2 class="dj-name">Ukesh</h2>
+                    <p class="dj-description">Ukesh energizes the crowd with versatile sets, blending house, techno, and club anthems for nonstop dancefloor action.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/yukeshgrg3/" target="_blank"><i class="fab fa-instagram"></i></a>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <script>
+        
+        document.querySelectorAll('.dj-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                document.querySelector('.carousel').style.animationPlayState = 'paused';
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                document.querySelector('.carousel').style.animationPlayState = 'running';
+            });
+        });
+    </script>
+
+            <br><br>
+            <br><br>
+            <br><br>
+            <br><br>
+          
+            <section id="video-section" class="relative text-white py-16 animate-pop'mt-24" style="background-color: transparent;">
+                <div class="container  mx-auto flex flex-col md:flex-row items-center">
+                    <div class="w-full md:w-1/2 relative">
+                        <video autoplay loop muted inlineclass="rounded-lg shadow-lg w-150 h-75" controls>
+                            <source src="gallery/OQPS7026a.MP4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="w-full md:w-1/2 mt-8 md:mt-0 md:ml-8 text-left">
+                        <h3 class="text-4xl font-bold uppercase tracking-wide text-orange-500" style="font-family: 'Akira Expanded', sans-serif;">Experience the Vibes</h3>
+                        <p class="text-lg mt-4 leading-relaxed">
+                            Dive into the electrifying atmosphere of Levels Club with our exclusive video highlights. From live DJ performances to themed parties, this is where the magic happens. Watch the video to relive the unforgettable moments and get a glimpse of what’s in store for you!
+                        </p>
+                       
+                    </div>
+                </div>
+                <section id="reels-container" class="relative text-white py-16 animate-pop" style="background-color: transparent;">
+                    <div class="container mx-auto ">
+                        <h2 class="text-4xl font-bold uppercase tracking-wide text-orange-500 mb-8 text-center" style="font-family: 'Akira Expanded', sans-serif;">Reels Section</h2>
+                        <div class="swiper reels-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <video autoplay loop muted controls class="rounded-lg shadow-lg" style="width: 300px; height: 500px;">
+                                        <source src="gallery/reels1.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                <div class="swiper-slide">
+                                    <video autoplay loop muted controls class="rounded-lg shadow-lg" style="width: 300px; height: 500px;">
+                                        <source src="gallery/reels2.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                <div class="swiper-slide">
+                                    <video autoplay loop muted controls class="rounded-lg shadow-lg" style="width: 300px; height: 500px;">
+                                        <source src="gallery/reels3.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                <div class="swiper-slide">
+                                    <video autoplay loop muted controls class="rounded-lg shadow-lg" style="width: 300px; height: 500px;">
+                                      <source src="gallery/reels4.mp4" type="video/mp4">
+                                      Your browser does not support the video tag.
+                                    </video>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <video autoplay loop muted controls class="rounded-lg shadow-lg" style="width: 300px; height: 500px;">
+                                      <source src="gallery/bollywood.mp4" type="video/mp4">
+                                      Your browser does not support the video tag.
+                                    </video>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <video autoplay loop muted controls class="rounded-lg shadow-lg" style="width: 300px; height: 500px;">
+                                      <source src="gallery/ladies.mp4" type="video/mp4">
+                                      Your browser does not support the video tag.
+                                    </video>
+                                  </div>
+                              
+                                  <div class="swiper-slide">
+                                    <video autoplay loop muted controls class="rounded-lg shadow-lg" style="width: 300px; height: 500px;">
+                                      <source src="gallery/samir1.mp4" type="video/mp4">
+                                      Your browser does not support the video tag.
+                                    </video>
+                                  </div>
+                              
+                                  <div class="swiper-slide">
+                                    <video autoplay loop controls class="rounded-lg shadow-lg" style="width: 300px; height: 500px;">
+                                      <source src="gallery/samir2.mp4" type="video/mp4">
+                                      Your browser does not support the video tag.
+                                    </video>
+                                  </div>
+                              
+                                  <div class="swiper-slide">
+                                    <video autoplay loop muted controls class="rounded-lg shadow-lg" style="width: 300px; height: 500px;">
+                                      <source src="gallery/samir3.mp4" type="video/mp4">
+                                      Your browser does not support the video tag.
+                                    </video>
+                                  </div>
+                            </div>
+                            
+                            <div class="swiper-button-next reels-next"></div>
+                            <div class="swiper-button-prev reels-prev"></div>
+                        </div>
+                    </div>
+                    <div id="reelModal" class="reel-modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeReel()">✖</span>
+            <video id="fullReelVideo" autoplay muted loop controls class="rounded-lg shadow-lg" style="width: 300px; height: 500px;"></video>
+        </div>
+    </div>
+                </section>
+                <script> 
+                    const reelsSwiper = new Swiper('.reels-swiper', {
+                        slidesPerView: 'auto',
+                        spaceBetween: 16,
+                        centeredSlides: true,
+                        loop: true, 
+                        autoplay: {
+                            delay: 5000,
+                            disableOnInteraction: false,
+                        },
+                        navigation: {
+                            nextEl: '.reels-next', 
+                            prevEl: '.reels-prev', 
+                        },
+                        grabCursor: true, 
+                    });
+                
+                   
+                    const videos = document.querySelectorAll('.reel-video');
+    const reelModal = document.getElementById('reelModal');
+    const fullReelVideo = document.getElementById('fullReelVideo');
+
+    videos.forEach((video) => {
+        video.addEventListener('click', () => {
+           
+            fullReelVideo.src = video.querySelector('source').src;
+            fullReelVideo.muted = false; 
+            fullReelVideo.play(); 
+            reelModal.style.display = 'flex'; 
+        });
+    });
+
+   
+    function closeReel() {
+        reelModal.style.display = 'none'; 
+        fullReelVideo.pause(); 
+        fullReelVideo.muted = true; 
+        fullReelVideo.src = ''; 
+    }
+     const slider1 = document.querySelector('.slider1');
+  slider1.addEventListener('mouseenter', () => {
+    slider1.classList.add('paused');
+  });
+  slider1.addEventListener('mouseleave', () => {
+    slider1.classList.remove('paused');
+  });
+                </script>
+           
+          
+           
+            </section>
+            <section id="our-services" class="relative  text-white py-16 animate-pop" style="background-color: transparent;">
+                <div class="container   mx-auto text-center">
+                    <h2 class="text-4xl font-bold uppercase tracking-wide text-white mb-8 drop-shadow" style="font-family: 'Akira Expanded', sans-serif; ;">Our Services</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8">
+                        <div class="flex flex-col items-center">
+                            <i class="fas fa-cocktail text-white text-6xl mb-4 drop-shadow"></i>
+                            <h3 class=" montserrat-bold text-2xl font-bold uppercase mb-2 drop-shadow">Lounge Bar</h3>
+                            <p class=" nexa-bold text-lg text-white drop-shadow drop-shadow">Relax and enjoy a wide variety of cocktails and drinks in our stylish lounge bar.</p>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <i class="fas fa-crown text-white text-6xl mb-4 drop-shadow"></i>
+                            <h3 class=" montserrat-bold text-2xl font-bold uppercase mb-2 drop-shadow">VIP Lounge</h3>
+                            <p class=" nexa-bold text-lg text-white drop-shadow">Experience exclusivity and luxury in our VIP lounge with premium services.</p>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <i class="fas fa-utensils text-white text-6xl mb-4 drop-shadow"></i>
+                            <h3 class=" montserrat-bold text-2xl font-bold uppercase mb-2 drop-shadow">Food</h3>
+                            <p class=" nexa-bold text-lg text-white drop-shadow">Savor delicious cuisines prepared by our expert chefs to complement your night.</p>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <i class="fas fa-glass-cheers text-white text-6xl mb-4 drop-shadow"></i>
+                            <h3 class=" montserrat-bold text-2xl font-bold uppercase mb-2 drop-shadow">Beverages</h3>
+                            <p class=" nexa-bold text-lg text-white drop-shadow">Choose from a wide range of beverages to keep the party going all night long.</p>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <i class="fas fa-music text-white text-6xl mb-4"></i>
+                            <h3 class=" montserrat-bold text-2xl font-bold uppercase mb-2 drop-shadow">Dance Floor</h3>
+                            <p class=" nexa-bold text-lg text-white drop-shadow">Hit the dance floor and groove to the beats of our electrifying music.</p>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <i class="fas fa-headphones text-white text-6xl mb-4"></i>
+                            <h3 class=" montserrat-bold text-2xl font-bold uppercase mb-2 drop-shadow">DJ</h3>
+                            <p class=" nexa-bold text-lg text-white drop-shadow">Enjoy live DJ performances that set the perfect vibe for an unforgettable night.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="services" class="relative text-white py-16 animate-pop" style="background-color: transparent;">
+                <div class="container   mx-auto text-center">
+                    <h2 class="text-4xl font-bold uppercase tracking-wide text-orange-500 mb-8">Additional Service</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="relative">
+                            <img src="gallery/birthday.jpg" alt="Past Event 1" class="rounded-lg shadow-lg w-full h-auto object-cover">
+                            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300">
+                                <h3 class="text-3xl font-bold uppercase tracking-wide text-orange-500" style="font-family: 'Akira Expanded', sans-serif;">Birthday Party</h3>
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <img src="gallery/bachelor.jpg" alt="Past Event 2" class="rounded-lg shadow-lg w-full h-auto object-cover">
+                            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300">
+                                <h3 class="text-3xl font-bold uppercase tracking-wide text-orange-500" style="font-family: 'Akira Expanded', sans-serif;">Bachelor Party</h3>
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <img src="gallery/corporate.jpg" alt="Past Event 3" class="rounded-lg shadow-lg w-full h-auto object-cover">
+                            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300">
+                                <h3 class="text-3xl font-bold uppercase tracking-wide text-orange-500" style="font-family: 'Akira Expanded', sans-serif;">Corporate Party </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+ <h2 class="text-4xl font-bold uppercase tracking-wide text-orange-500 mb-8 drop-shadow text-center" style="font-family: 'Akira Expanded', sans-serif; ">HIGHLIGHTS</h2>
+                   
+             <div class="grid-container ">
+                 
+      
+               <div class="grid-item">
+    <img src="gallery/theelements.jpg" alt="The Elements">
+    <div class="overlay">
+        <h3>The Elements</h3>
+        <p>The Elements, Nepal’s top contemporary band, perform live at Levels Club Pokhara on July 4, 2025. Don’t miss their soulful melodies and energetic stage presence—join us for an unforgettable night!</p></div>
+</div>
+<div class="grid-item">
+    <img src="gallery/friday.jpg" alt="Friday Night Vibes">
+    <div class="overlay">
+        <h3>Friday Night Vibes</h3>
+        <p>
+            Friday Night Vibes at Levels Club Pokhara are all about electrifying energy, top DJs, and a packed dancefloor. Experience the best music, signature cocktails, and an unbeatable party atmosphere every Friday. Gather your friends and kick off the weekend with unforgettable moments, great company, and non-stop fun at the hottest spot in town!
+        </p>
+    </div>
+    </div>
+        <div class="grid-item">
+            <img src="gallery/chewang1.jpg" alt="Feel the Beat">
+            <div class="overlay">
+                <h3>Chhewang Lama & The Creators</h3>
+          <p>Chhewang Lama and The Creators deliver a mesmerizing performance, blending soulful melodies with high-energy beats that captivate the audience and create an unforgettable musical experience.</p>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="gallery/chewang2.jpg" alt="Lounge Area">
+            <div class="overlay">
+                <h3>Chhewang Lama's Band</h3>
+          <p>
+            Chhewang Lama's band blends traditional and modern music, creating a mesmerizing and unforgettable experience.</p>  
+        </div>
+        </div>
+        <div class="grid-item">
+            <img src="gallery/chhewang.jpg" alt="VIP Services">
+            <div class="overlay">
+                <h3>Chhewang Lama Flyer</h3>
+          <p>
+            Chhewang Lama's flyer highlights his upcoming performance at Levels Club with bold visuals and details. Experience his soulful melodies and energetic beats live!</p>  </div>
+        </div>
+        <div class="grid-item">
+            <img src="gallery/dong.jpg" alt="VIP Services">
+            <div class="overlay">
+                <h3>Dong</h3>
+           <p>
+            Dong captivates the audience with his high-energy performance, blending traditional and modern music for an unforgettable experience.</p> </div>
+        </div>
+        <div class="grid-item">
+            <img src="gallery/past1.JPG" alt="VIP Services">
+            <div class="overlay">
+                <h3>Jamesy</h3>
+           <p>Jamesy delivers an electrifying performance with his unique style, captivating the audience at Levels Club Pokhara.</p>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="gallery/past2.JPG" alt="VIP Services">
+            <div class="overlay">
+                <h3>Ekdev Limbu & Kallas</h3>
+           <p>
+            Ekdev Limbu and Kallas captivate with their unique blend of traditional and modern music, creating unforgettable vibes.</p> 
+        </div>
+        </div>
+          <div class="grid-item">
+            <img src="gallery/ayg.jpg" alt="The party is ON">
+            <div class="overlay">
+                <h3>AYG & DIL_A</h3>
+                <p>AYG and Dil_A bring an electrifying performance with their unique blend of beats and energy, creating an unforgettable experience for the audience.</p>
+            </div>
+        </div>
+                <div class="grid-item">
+            <img src="gallery/trix.jpg" alt="VIP Services">
+            <div class="overlay">
+                <h3>Profesor Trix</h3>
+                <p>Our VIP members enjoy an elevated experience with exclusive areas, separate entrances, and the best service in town.</p>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="gallery/past3.jpg" alt="VIP Services">
+            <div class="overlay">
+                <h3>New Year Celebration</h3>
+                <p>Our VIP members enjoy an elevated experience with exclusive areas, separate entrances, and the best service in town.</p>
+            </div>
+        </div>
+                <div class="grid-item">
+            <img src="gallery/jay.jpg" alt="VIP Services">
+            <div class="overlay">
+                <h3>Jay And Brisky</h3>
+                <p>Our VIP members enjoy an elevated experience with exclusive areas, separate entrances, and the best service in town.</p>
+            </div>
+        </div>
+        
+    </div>
+            
+            <section id="past-events" class="relative text-white py-16 animate-pop" style="background-color: transparent;">
+                <div class="container  mx-auto">
+                    <h2 class="text-4xl font-bold uppercase tracking-wide text-orange-500 mb-8 text-center">Book Your Table</h2>
+                    <div class="flex flex-col md:flex-row items-center mb-12">
+                        <div class="w-full md:w-1/2 relative">
+                            <img src="gallery/book.jpg" alt="book a table" class="rounded-lg shadow-lg w-full h-auto object-cover">
+                        </div>
+                        <div class="w-full md:w-1/2 mt-8 md:mt-0 md:ml-8 text-left">
+                            <h3 class=" montserrat-bold text-3xl font-bold uppercase tracking-wide text-orange-500">The pricing may vary depending upon the number of guests at the table</h3>
+                            <p class=" nexa-bold text-lg mt-4 leading-relaxed">
+                                Booking a table in advance gives you VIP treatment, skips the entry line, and guarantees your spot—perfect for busy nights or special events.</p>
+                        <a href="https://wa.me/9802853733" target="_blank" class="book-table-float" title="Book Your Table on WhatsApp">
+  <i class="fas fa-calendar-check"></i>
+  <span>Book Table</span>
+</a>
+<h2>You can easily book the table clicking on the icon I have provided.</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="location" class="mt-8  flex flex-col items-center text-center animate-pop">
+                <h2 class="text-2xl  font-bold mb-4 drop-shadow text-orange-500">Our Location</h2>
+                <div class="location-photo ">
+                    <p class=" nexa-bold text-white mt-2 drop-shadow">Find us at Pokhara, Lakeside-Center Point</p>
+                </div>
+                    <div class="container ">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3515.8230748275273!2d83.95436257548549!3d28.21268747589672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3995956c588a2529%3A0x7d568fe381b302f0!2sLevels%20Club%20Pokhara!5e0!3m2!1sen!2snp!4v1744102272601!5m2!1sen!2snp" 
+                            width="100%" 
+                            height="500" 
+                            class="rounded shadow-lg"
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </section>
+             
+<section id="owner" class="owner-section">
+    <div class="parallax-owner" data-parallax="scroll" data-image-src="images/owner-bg.jpg"></div>
+    <div class="container">
+        <h2 class=" text-2xl text-orange-500 animate__animated text-center justify-center drop-shadow" style="font-family: 'Akira Expanded', sans-serif;">Meet The Owner</h2>
+        
+        <div class="owner-profile animate__animated">
+            <div class="owner-image">
+                <img src="gallery/owner.jpg" alt="Nightclub Owner">
+             
+            </div>
+            
+            <div class="owner-bio text-center justify-center">
+                <h3>Amit Roka</h3>
+                <p class="owner-tagline nexa-bold text-center justify-center">"Creating unforgettable nights since 2020"</p>
+                
+                <div class="owner-details">
+                    <p class="nexa-bold text-center justify-center"><i class="fas fa-award"></i> <strong>15+ years</strong> in nightlife industry</p>
+                    <p class="nexa-bold text-center justify-center"><i class="fas fa-glass-cheers"></i> Founded <strong>a successful club</strong> in Pokhara</p>
+                    <p class="nexa-bold text-center justify-center"><i class="fas fa-music"></i> Curates our signature <strong>VIP experience</strong></p>
+                </div>
+                
+                <div class="owner-story text-center justify-center">
+            <p>
+              Amit Roka, owner of Levels Club Pokhara, is a seasoned nightlife entrepreneur known for his passion and commitment to top-tier hospitality. His vision has made Levels Club a leading party destination in Pokhara.
+            </p>
+            </div>
+<div class="owner-details flex flex-col md:flex-row md:justify-center md:items-center gap-8 mt-4">
+    <div class="contact-card flex flex-col items-center md:items-start">
+        <i class="fas fa-phone-alt"></i>
+        <h3 class="montserrat-bold">Phone</h3>
+        <a href="tel:9813660255" class="flex items-center justify-center hover:text-orange-500">
+            +9779813660255
+        </a>
+    </div>
+    <div class="contact-card flex flex-col items-center md:items-start">
+        <i class="fas fa-envelope"></i>
+        <h3 class="montserrat-bold">Email</h3>
+        <p class="nexa-bold text-lg flex items-center justify-center">
+            <a href="mailto:roka.amit5@gmail.com" class="flex items-center hover:text-orange-500">
+                roka.amit5@gmail.com
+            </a>
+        </p>
+    </div>
+</div>
+    </div>
+</section>
+        </main>
+        <footer class=" text-white py-8">
+            <div class="container   mx-auto px-4 text-center">
+                <nav class="flex justify-center space-x-8 text-lg font-bold mb-8">
+                    <a href="index.html" class="hover:text-orange-500 font-bold uppercase text-2xl text-white drop-shadow-text" style="font-family: 'Akira Expanded', sans-serif;">Home</a>
+                    <a href="faq.html" class="hover:text-orange-500 font-bold uppercase text-2xl text-white drop-shadow-text" style="font-family: 'Akira Expanded', sans-serif;">FAQs</a>
+                     <a href="contact.html" class="hover:text-orange-500 font-bold uppercase text-2xl text-white drop-shadow-text" style="font-family: 'Akira Expanded', sans-serif;">Contact</a>
+                </nav>
+            </div>
+            <div class="container  mx-auto px-4 text-center">
+                <img src="gallery/logo.png" alt="Club Logo" class="h-16 mx-auto mb-4">
+                <h3 class="montserrat-bold text-xl font-bold drop-shadow">Levels Club</h3>
+                <p class=" nexa-bold text-lg flex items-center justify-center">
+                 <i class="fas fa-map-marker-alt text-orange-500 mr-2"></i> 
+                <a href="https://maps.app.goo.gl/rhhoynFXe3spq2J56" target="_blank" class="hover:text-orange-500 drop-shadow">
+                 Centre Point, Lakeside, Pokhara
+                 </a>
+                </p>
+            </div>
+            <div class="container   mx-auto px-4 text-center mt-8">
+                <h3 class="montserrat-bold text-xl font-bold mb-4 drop-shadow">Contact Number</h3>
+                <p class=" nexa-bold text-lg flex items-center justify-center ">
+                    <a href="tel:9802853733" class="flex items-center hover:text-orange-500">
+                        <i class="fas fa-phone-alt text-orange-500 mr-2 drop-shadow"></i> 9802853733
+                    </a>
+                </p>
+            </div>
+            <div class="container  mx-auto px-4 text-center mt-8">
+                <h3 class=" montserrat-bold text-xl font-bold mb-4 drop-shadow">Email Us</h3>
+                <p class=" nexa-bold text-lg flex items-center justify-center">
+                    <a href="mailto:levelsclubpokhara@gmail.com" class="flex items-center hover:text-orange-500">
+                        <i class="fas fa-envelope text-orange-500 mr-2 drop-shadow"></i> levelsclubpokhara@gmail.com
+                    </a>
+                </p>
+            </div>
+        
+            <div class="container   mx-auto px-4 text-center mt-8">
+                <h3 class=" montserrat-bold text-xl font-bold mb-4 drop-shadow">Opening Hours</h3>
+                <p class=" nexa-bold text-lg flex items-center justify-center">
+                    <i class="fas fa-clock text-orange-500 mr-2 drop-shadow"></i> 08 PM - 05 AM (Everyday)
+                </p>
+            </div>
+        
+            <div class="container   mx-auto px-4 mt-8 flex justify-center space-x-6">
+                <a href="https://www.facebook.com/profile.php?id=61567808766807" class="text-white hover:text-orange-500">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/levelsclubpokhara/" class="text-white hover:text-orange-500">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/@levelsclub_pokhara" class="text-white hover:text-orange-500">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+            </div>
+        
+            <div class="container   mx-auto px-4 mt-8 text-center text-2xl">
+                <p class="nexa-bold drop-shadow">&copy; 2025 Levels Club Pokhara. All Rights Reserved. <a href="rules.html" class=" nexa-bold hover:text-orange-500 drop-shadow">Rules and Regulations </a>|<a href="terms.html" class="hover:text-orange-500 drop-shadow">Terms & Conditions</a> | <a href="policy.html" class="hover:text-orange-500 drop-shadow">Privacy Policy</a>
+                </div>
+        </footer>
+        
+
+      
+        <script> 
+const upcomingEventsSwiper = new Swiper('.upcoming-events-swiper', {
+        loop: true, // Enable infinite looping
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        autoplay: {
+            delay: 5000, // 5 seconds sliding time
+            disableOnInteraction: false,
+        },
+    });
+        </script>
+         <script>
+            // Animate sections when in view
+            const popSections = document.querySelectorAll('.animate-pop');
+        
+            const popObserver = new IntersectionObserver(entries => {
+              entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add('visible');
+                }
+              });
+            }, { threshold: 0.2 });
+        
+            popSections.forEach(section => {
+              popObserver.observe(section);
+            });
+            // Add to your existing JavaScript
+function animateOwnerSection() {
+    const ownerSection = document.querySelector('.owner-section');
+    const ownerTitle = ownerSection.querySelector('.section-title');
+    const ownerProfile = ownerSection.querySelector('.owner-profile');
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                ownerTitle.classList.add('animate__fadeInDown');
+                ownerProfile.classList.add('animate__fadeInUp');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1 });
+    
+    observer.observe(ownerSection);
+}
+
+// Call this function in your DOMContentLoaded event
+animateOwnerSection();
+          </script>
+    </body>
+</html>

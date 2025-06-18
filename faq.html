@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial scale="1.0">
+        <title>FAQs</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/akira-expanded" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+             <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            color: #fff;
+            line-height: 1.6;
+            overflow-x: hidden;
+            background-color: #000;
+        }
+        
+        /* Parallax Sections */
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        
+        .parallax::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        
+        .parallax-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            padding: 0 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        /* Hero Section */
+        #hero {
+            background-image: url('https://images.unsplash.com/photo-1566737236500-c8ac43014a67?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+        }
+        
+        .logo {
+            font-size: 5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #ff3366;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+        
+        .tagline {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+        
+        /* FAQ Section */
+        #faq {
+            background-image: url('https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            padding: 100px 0;
+        }
+        
+        .faq-container {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 0 30px rgba(255, 51, 102, 0.3);
+            text-align: left;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 30px;
+            color: #ff3366;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            margin: 40px 0 20px;
+            color: #ff3366;
+            border-bottom: 1px solid #ff3366;
+            padding-bottom: 10px;
+        }
+        
+        .faq-item {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 20px;
+        }
+        
+        .faq-question {
+            font-size: 1.4rem;
+            color: #ffcc00;
+            margin-bottom: 15px;
+            cursor: pointer;
+            position: relative;
+            padding-left: 30px;
+        }
+        
+        .faq-question:before {
+            content: '+';
+            position: absolute;
+            left: 0;
+            color: #ff3366;
+            font-size: 1.8rem;
+            font-weight: bold;
+            top: -5px;
+        }
+        
+        .faq-question.active:before {
+            content: '-';
+        }
+        
+        .faq-answer {
+            font-size: 1.1rem;
+            padding-left: 30px;
+            display: none;
+        }
+        
+        .faq-answer.show {
+            display: block;
+        }
+        
+        .highlight-box {
+            background-color: rgba(255, 51, 102, 0.1);
+            border-left: 4px solid #ff3366;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #000;
+            padding: 30px 0;
+            text-align: center;
+            border-top: 1px solid #333;
+        }
+        
+        .contact-info {
+            margin-bottom: 20px;
+        }
+        
+        .social-links a {
+            color: #fff;
+            font-size: 1.5rem;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        
+        .social-links a:hover {
+            color: #ff3366;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 3rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            .faq-container {
+                padding: 30px 20px;
+            }
+            
+            .faq-question {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+
+ <header id="mainHeader" style="backdrop-filter: blur(12px); background: rgba(24,24,27,0.7); transition: top 0.4s;">
+  <div class="container mx-auto px-4 flex flex-col items-center py-4">
+    <div class="flex items-center justify-center mb-4 space-x-4">
+      <img src="gallery/logo.png" alt="Levels Club Pokhara Logo" class="h-16">
+      <h1 class="text-3xl font-bold drop-shadow text-center text-white" style="font-family: 'Akira Expanded', sans-serif;">
+        <a href="index.html">LEVELS CLUB POKHARA</a>
+      </h1>
+    </div>
+    <nav class="flex justify-center space-x-8 text-lg font-bold mb-0">
+      <a href="index.html" class="hover:text-orange-500 font-bold uppercase text-2xl drop-shadow text-white">Home</a>
+      <a href="faq.html" class="hover:text-orange-500 font-bold uppercase text-2xl drop-shadow text-white">FAQs</a>
+      <a href="contact.html" class="hover:text-orange-500 font-bold uppercase text-2xl drop-shadow text-white">Contact</a>
+    </nav>
+  </div>
+</header>
+<script>
+let lastScrollY = window.scrollY;
+const header = document.getElementById('mainHeader');
+header.style.position = "fixed";
+header.style.width = "100%";
+header.style.top = "0";
+header.style.zIndex = "50";
+header.style.transition = "top 0.4s cubic-bezier(0.4,0,0.2,1)";
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY === 0) {
+    header.style.top = "0";
+  } else if (window.scrollY > lastScrollY) {
+   header.style.top = `-${header.offsetHeight}px`;
+  } else {
+   
+    header.style.top = "0";
+  }
+  lastScrollY = window.scrollY;
+});
+</script>
+                    
+           <section id="faq" class="parallax">
+        <div class="parallax-content">
+            <div class="faq-container">
+                <h1>FAQs</h1>
+                <p>Find answers to common questions about Levels Club Pokhara. If you don't find what you're looking for, please contact us.</p>
+                
+                <div class="highlight-box">
+                    <p>We update our FAQ regularly to provide the most current information about our club policies, events, and services.</p>
+                </div>
+                
+                <h2>General Questions</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question">What are your opening hours?</div>
+                    <div class="faq-answer">
+                        <p>Levels Club is open:</p>
+                        <ul>
+                            <li>Everyday: 9:00 PM to 6:00 AM</li>
+                        </ul>
+                        <p>Special events may have different hours which will be announced on our social media.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">What is the dress code?</div>
+                    <div class="faq-answer">
+                        <p>We enforce a smart casual dress code:</p>
+                        <ul>
+                            <li>No sportswear, flip-flops, or beachwear</li>
+                            <li>Collared shirts preferred for men</li>
+                            <li>Dress shoes or fashionable sneakers</li>
+                            <li>No excessively revealing clothing</li>
+                        </ul>
+                        <p>Management reserves the right to deny entry based on dress code at their discretion.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Do you have age restrictions?</div>
+                    <div class="faq-answer">
+                        <p>Yes, we strictly enforce the following age policies:</p>
+                        <ul>
+                            <li>Minimum age for entry: 18 years</li>
+                            <li>Valid government-issued photo ID required for all guests</li>
+                            <li>No exceptions will be made</li>
+                            <li>Alcohol will only be served to guests 21+ with valid ID</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <h2>Reservations & Events</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How can I make a reservation?</div>
+                    <div class="faq-answer">
+                        <p>Reservations can be made:</p>
+                        <ul>
+                            <li>Online through our website booking system</li>
+                            <li>By calling +977  9802853733 during business hours</li>
+                            <li>Through direct message on our Instagram or Facebook</li>
+                        </ul>
+                        <p>For large groups (8+ people) or VIP tables, we recommend booking at least 48 hours in advance.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Do you host private events?</div>
+                    <div class="faq-answer">
+                        <p>Yes! Levels Club is available for private events:</p>
+                        <ul>
+                            <li>Birthday parties</li>
+                            <li>Bachelorette parties</li>
+                            <li>Corporate events</li>
+                            <li>Product launches</li>
+                            <li>Special celebrations</li>
+                        </ul>
+                        <p>We offer full buyout options or semi-private areas. Contact our events team at events@levelsclubpokhara.com for packages and pricing.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Is there an entry fee?</div>
+                    <div class="faq-answer">
+                        <p>Our entry policy varies:</p>
+                        <ul>
+                            <li>Regular nights: Free of Cost </li>
+                            <li>Ladies night (Wednesday): No cover for women </li>
+                            <li>Special events: Varying cover charges as announced</li>
+                            <li>VIP table reservations include entry for your group</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <h2>Facilities & Services</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Do you have a coat check?</div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer secure coat check services:</p>
+                        <ul>
+                            <li>Location: Near the main entrance</li>
+                            <li>Fee: Free of Cost</li>
+                            <li>Hours: Open until 30 minutes after closing</li>
+                            <li>We cannot be responsible for valuable items left in coats</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Is there parking available?</div>
+                    <div class="faq-answer">
+                        <p>Parking options near Levels Club:</p>
+                        <ul>
+                            <li>Street parking available but limited</li>
+                            <li>We recommend using taxis or ride-sharing services</li>
+                        </ul>
+                        <p>The club is not responsible for vehicles or items left in vehicles.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Do you serve food?</div>
+                    <div class="faq-answer">
+                        <p>We offer a selection of bar snacks and light meals:</p>
+                        <ul>
+                            <li>Menu available until morning</li>
+                            <li>Vegetarian and non-vegetarian options</li>
+                            <li>Special dietary requests accommodated when possible</li>
+                            <li>No outside food permitted</li>
+                        </ul>
+                        <p>For full dining options, we recommend visiting one of Lakeside's excellent restaurants before coming to the club.</p>
+                    </div>
+                </div>
+                
+                <div class="highlight-box">
+                    <p>Still have questions? Contact us at levelsclubpokhara@gmail.com or call +977 9802853733 during business hours.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+  <footer>
+     <p class="nexa-bold drop-shadow">&copy; 2025 Levels Club Pokhara. All Rights Reserved. <a href="rules.html" class="hover:text-orange-500">Rules and Regulations </a>|<a href="terms.html" class="hover:text-orange-500">Terms & Conditions</a> | <a href="privacy.html" class="hover:text-orange-500">Privacy Policy</a>
+                    </footer>
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const questions = document.querySelectorAll('.faq-question');
+            
+            questions.forEach(question => {
+                question.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                    const answer = this.nextElementSibling;
+                    answer.classList.toggle('show');
+                    
+                    
+                    questions.forEach(q => {
+                        if (q !== this) {
+                            q.classList.remove('active');
+                            q.nextElementSibling.classList.remove('show');
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
