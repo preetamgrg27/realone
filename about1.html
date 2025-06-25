@@ -309,8 +309,18 @@ nav a:hover {
         .social-icons a {
             color: white;
             margin: 0 10px;
-            font-size: 1.5rem;
+            font-size: 2.5rem;
         }
+        footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+footer a:hover {
+    color: #ff8800;
+    text-decoration: none;
+}
     </style>
 </head>
 <body>
@@ -323,10 +333,14 @@ nav a:hover {
       </h1>
     </div>
     <nav style="margin-top: 0.5rem;">
-      <a href="index.html" class="hover:text-orange-500 font-bold uppercase text-2xl drop-shadow" style="margin: 0 1.5rem; text-decoration:none;">Home</a>
-      <a href="faq.html" class="hover:text-orange-500 font-bold uppercase text-2xl drop-shadow" style="margin: 0 1.5rem; text-decoration:none;">FAQs</a>
-      <a href="contact.html" class="hover:text-orange-500 font-bold uppercase text-2xl drop-shadow" style="margin: 0 1.5rem; text-decoration:none;">Contact</a>
-    </nav>
+  <a href="#hero" class="hover:text-orange-500 font-bold uppercase text-2xl drop-shadow" style="margin: 0 1.5rem; text-decoration:none;">Home</a>
+  <a href="#about" class="hover:text-orange-500 font-bold uppercase text-2xl drop-shadow" style="margin: 0 1.5rem; text-decoration:none;">About</a>
+  <a href="#facilities" class="hover:text-orange-500 font-bold uppercase text-2xl drop-shadow" style="margin: 0 1.5rem; text-decoration:none;">Facilities</a>
+  <a href="#events" class="hover:text-orange-500 font-bold uppercase text-2xl drop-shadow" style="margin: 0 1.5rem; text-decoration:none;">Events</a>
+  <a href="#owner" class="hover:text-orange-500 font-bold uppercase text-2xl drop-shadow" style="margin: 0 1.5rem; text-decoration:none;">Owner</a>
+  <a href="faq.html" class="hover:text-orange-500 font-bold uppercase text-2xl drop-shadow" style="margin: 0 1.5rem; text-decoration:none;">FAQs</a>
+  <a href="contact.html" class="hover:text-orange-500 font-bold uppercase text-2xl drop-shadow" style="margin: 0 1.5rem; text-decoration:none;">Contact</a>
+</nav>
   </div>
 </header><br><br><br><br><br><br>
 <script>
@@ -444,9 +458,22 @@ window.addEventListener('scroll', () => {
 
     <footer>
         <h3>LEVELS CLUB POKHARA</h3>
-        <p>Centerpoint, Lakeside, Pokhara, Nepal</p>
+        <p class=" nexa-bold text-lg flex items-center justify-center">
+                 <i class="fas fa-map-marker-alt text-orange-500 mr-2"></i> 
+                <a href="https://maps.app.goo.gl/rhhoynFXe3spq2J56" target="_blank" class="hover:text-orange-500 drop-shadow">
+                 Centre Point, Lakeside, Pokhara
+                 </a>
+                </p>
         <p>Open Daily: 9:00 PM - 6:00 AM</p>
-        <p>Contact: +977 9802853733| levelsclubpokhara@gmail.com</p>
+         <p class=" nexa-bold text-lg flex items-center justify-center ">
+                    <a href="tel:9802853733" class="flex items-center hover:text-orange-500">
+                        <i class="fas fa-phone-alt text-orange-500 mr-2 drop-shadow"></i> 9802853733
+                    </a>
+                <p class=" nexa-bold text-lg flex items-center justify-center">
+                    <a href="mailto:levelsclubpokhara@gmail.com" class="flex items-center hover:text-orange-500">
+                        <i class="fas fa-envelope text-orange-500 mr-2 drop-shadow"></i> levelsclubpokhara@gmail.com
+                    </a>
+                </p>
         
         <div class="social-icons">
          <a href="https://www.facebook.com/profile.php?id=61567808766807" class="text-white hover:text-orange-500">
@@ -470,15 +497,14 @@ window.addEventListener('scroll', () => {
             });
         });
         
-        // Smooth scrolling for navigation
-        document.querySelectorAll('nav a').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
+      document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
         });
+    });
+});
     </script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
